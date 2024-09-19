@@ -47,9 +47,9 @@ const handleSubmit = async(e) =>  {
   try {
     const response = await theToken.textGeneration({
       model: "HuggingFaceH4/zephyr-7b-beta",
-      inputs: formData
-    })
-    setResult(response.generated_text)
+      inputs: formData.question,
+    });
+    setResult(response.generated_text);
   } catch (error) {
     console.error("Error generating answer:", error)
     setResult("Sorry, I couldn't generate an answer.")
@@ -61,8 +61,8 @@ return (
   //     <h1>Text Generation Result</h1>
   //     {result ? <pre>{(result.generated_text)}</pre> : <p>Loading...</p>}
   //   </div>
-
-    <form>
+    <div>
+    <form onSubmit={handleSubmit}>
         <label>Question:
           <input
           type="text"
@@ -70,8 +70,10 @@ return (
           onChange={handleChange}
         />
         </label>
-        <button onClick={handleSubmit}>Submit</button>
+        <button>Submit</button>
     </form>
+    {result && <p>Answer:{result}</p>}
+    </div>
 
 )
 
