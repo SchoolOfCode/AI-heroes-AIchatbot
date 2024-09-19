@@ -57,11 +57,7 @@ const handleSubmit = async(e) =>  {
 }
 
 return (
-  // <div className="App">
-  //     <h1>Text Generation Result</h1>
-  //     {result ? <pre>{(result.generated_text)}</pre> : <p>Loading...</p>}
-  //   </div>
-    <div>
+    <div className="form">
     <form onSubmit={handleSubmit}>
         <label>Question:
           <input
