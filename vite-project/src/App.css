@@ -1,0 +1,9 @@
+body{
+    width: 414px;
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    color: red;
+}
