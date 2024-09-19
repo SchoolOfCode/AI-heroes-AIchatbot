@@ -17,7 +17,7 @@ async function classifyText(){
   try {
     const response = await theToken.textGeneration({
         model: "HuggingFaceH4/zephyr-7b-beta",
-        inputs: textToGenerate,
+        inputs: formData,
       })
       setResult(response)
       console.log(response)
@@ -42,9 +42,18 @@ const handleChange = (e) => {
 };
 
 
-const handleSubmit = (e) =>  {
+const handleSubmit = async(e) =>  {
   e.preventDefault()
-  console.log('Form data submitted:', formData)
+  try {
+    const response = await theToken.textGeneration({
+      model: "HuggingFaceH4/zephyr-7b-beta",
+      inputs: formData
+    })
+    setResult(response.generated_text)
+  } catch (error) {
+    console.error("Error generating answer:", error)
+    setResult("Sorry, I couldn't generate an answer.")
+  }
 }
 
 return (
