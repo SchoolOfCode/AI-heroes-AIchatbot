@@ -8,9 +8,6 @@ body{
     /* border: red 1px solid; */
     justify-content: center;
     height: 100vh;
-
-
-    
 }
 
 .form {
@@ -20,6 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 
 }
 
@@ -31,17 +29,21 @@ body{
     border-radius: 15px;
     position: relative;
     margin-bottom: 20px;
+    width: 600px;
 
 }
 
 .submitButton{
-    padding: 5px 10px;
-    margin-left: 15px;
-    border: none;
-    color: black;
-    border-radius: 5px;
+    padding: 7px 12px;
+    margin-left: 100px;
+    border: 5px;
+    color: rgb(62, 15, 206);
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px
+    font-size: 16px;
+    background-color: rgb(122, 179, 122);
+    text-align: center;
+    line-height: 5px;
 }
 
 .input{
@@ -49,12 +51,13 @@ body{
     padding: 5px;
     border: 2px solid red;
     border-radius: 5px;
+    width :300px;
 }
 
 submitButton:hover
  { 
-    background-color: #99CC00;
-     /* Slightly darker neon green on hover */ 
+    background-color: #ed4ea0;
+     /* Slightly darker neon pink on hover */ 
 } 
 
 
@@ -64,7 +67,7 @@ submitButton:hover
     padding: 20px; 
     font-size: 18px;
     border-radius: 10px;
-    background-color: #00B8B8; 
+    background-color: #70ebeb; 
     color: black; 
     margin-top: 20px; 
     width: 70%; 
