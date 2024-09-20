@@ -64,7 +64,7 @@ return (
           className="input"
           type="text"
           name="question"
-          onChange={handleChange}
+          onChange={handleChange} 
         />
         </label>
         <button>Submit</button>
