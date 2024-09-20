@@ -1,76 +1,77 @@
-body{
-    /* width: 414px; */
+body {
     display: flex;
     align-items: center;
-    padding: auto;
-    margin: auto;
-    padding-top: 20px;
-    /* border: red 1px solid; */
     justify-content: center;
     height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom right, rgb(131, 92, 223), rgb(6, 21, 163));
+    font-family: 'Arial', sans-serif; /* Use a modern sans-serif font */
 }
 
 .form {
-    color: rgb(72, 121, 185);
+    color: #333; /* Use a neutral color for text */
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    
-
+    align-items: center;
 }
 
 .formBox {
     display: flex;
-    height: 20px;
-    border: 3px solid rgb(21, 18, 211);
-    padding: 20px;
+    border: 2px solid rgb(21, 18, 211);
+    padding: 30px; /* Increased padding for a more spacious feel */
     border-radius: 15px;
-    position: relative;
     margin-bottom: 20px;
-    width: 600px;
-
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Limit max width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    background-color: white; /* White background for form */
 }
 
-.submitButton{
-    padding: 7px 12px;
-    margin-left: 100px;
-    border: 5px;
-    color: rgb(62, 15, 206);
+.submitButton {
+    padding: 10px 1px; /* More padding for a better button size */
+    border: none;
+    color: #fff;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
-    background-color: rgb(122, 179, 122);
-    text-align: center;
-    line-height: 5px;
+    font-size: 18px; /* Slightly larger font */
+    background-color: rgb(123, 171, 235);
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition */
+    height: 40px;
+    width: 100px;
+    position: relative;
+    top: 33px;
+    margin-left: 15px;
 }
 
-.input{
-    margin-left: 10px;
-    padding: 5px;
+.submitButton:hover {
+    background-color: #ed4ea0;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.input {
+    margin: 10px 0;
+    padding: 12px; /* Increased padding */
     border: 2px solid rgb(56, 25, 134);
     border-radius: 5px;
-    width :300px;
+    width: 100%; /* Full width */
+    max-width: 300px; /* Limit max width */
+    box-sizing: border-box;
+    font-size: 16px; /* Adjust font size */
 }
 
-submitButton:hover
- { 
-    background-color: #ed4ea0;
-     /* Slightly darker neon pink on hover */ 
-} 
-
-
-.resultText
- { 
-    border: 3px solid #BFFF00;
-    padding: 20px; 
+.resultText {
+    border: 2px solid rgb(56, 25, 134);
+    padding: 20px;
     font-size: 18px;
     border-radius: 10px;
-    background-color: #70ebeb; 
-    color: black; 
-    margin-top: 20px; 
-    width: 70%; 
-    text-align: center; 
-    box-sizing: border-box; 
+    background-color: rgb(123, 171, 235);
+    color: black;
+    margin-top: 20px;
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Limit max width */
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
 }
