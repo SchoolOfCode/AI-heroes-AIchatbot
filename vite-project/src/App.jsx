@@ -58,9 +58,10 @@ const handleSubmit = async(e) =>  {
 
 return (
     <div className="form">
-    <form onSubmit={handleSubmit}>
+    <form className="formBox" onSubmit={handleSubmit}>
         <label>Question:
-          <input
+          <input 
+          className="input"
           type="text"
           name="question"
           onChange={handleChange}

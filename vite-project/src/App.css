@@ -2,8 +2,26 @@ body{
     width: 414px;
     display: flex;
     align-items: center;
+    padding: auto;
+    margin: auto;
+    padding-top: 20px;
+    
 }
 
 .form {
     color: red;
+
+}
+
+.formBox {
+    display: flex;
+    height: 20px;
+}
+
+.input {
+    display: flex;
+    height: 100px;
+    width: 300px;
+    padding: 50px;
+    margin-bottom: 100px;
 }
