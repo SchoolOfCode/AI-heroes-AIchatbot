@@ -67,9 +67,9 @@ return (
           onChange={handleChange} 
         />
         </label>
-        <button>Submit</button>
+        <button className='submitButton'>Submit</button>
     </form>
-    {result && <p>Answer:{result}</p>}
+    {result && <p className='resultText'>Answer:{result}</p>}
     </div>
 
 )
